@@ -90,7 +90,7 @@ fun CounterScreen() {
             Spacer(modifier = Modifier.width(32.dp))
             Button(
                 onClick = {
-                    idade.value++
+                    if (idade.value < 130) idade.value++
                     Log.i("FIAP", "Idade: ${idade.value}")
                 },
                 modifier = Modifier.size(84.dp),
